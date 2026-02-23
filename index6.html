@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course UI</title>
 
-    
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
     />
 
-    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./style6.css" />
   </head>
+
   <body>
-    
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">
-           <div class="logo"><img src="./images/LOGO (1).png"></div>
+          <div class="logo">
+            <img src="./images/LOGO (1).png">
+          </div>
         </a>
 
         <button
@@ -48,16 +53,17 @@
       </div>
     </nav>
 
-    
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
             <h1 class="hero-title">Web Design & UI/UX Design with Graphics</h1>
+
             <p class="hero-text">
               Learn the essentials and advanced concepts of web design and UI/UX design with AI through a dedicated 
-course at the Uni. Become a professional UI/UX designer expert capable of designing 
-high-impact websites and user experiences for businesses and building a promising career.
+              course at the Uni. Become a professional UI/UX designer expert capable of designing 
+              high-impact websites and user experiences for businesses and building a promising career.
             </p>
 
             <button class="btn btn-outline-orange">Enroll now</button>
@@ -66,17 +72,17 @@ high-impact websites and user experiences for businesses and building a promisin
       </div>
     </section>
 
+    <!-- COURSE AREA -->
     <section class="course-area">
       <div class="container">
         <div class="row">
-          
-          <div class="col-lg-8">
-            <img
-              src="./images/Frame 77.png"
-              class="course-img"
-            />
 
-            <div class="content-box">
+          <!-- LEFT CONTENT -->
+          <div class="col-lg-8">
+
+            <img src="./images/Frame 77.png" class="course-img" data-aos="zoom-in"/>
+
+            <div class="content-box" data-aos="fade-up">
               <h4>About Course</h4>
               <p>
                 Explore the fundamentals of user experience design including
@@ -84,7 +90,7 @@ high-impact websites and user experiences for businesses and building a promisin
               </p>
             </div>
 
-            <div class="content-box">
+            <div class="content-box" data-aos="fade-up">
               <h4>What Will You Learn?</h4>
               <div class="row">
                 <div class="col-md-6">
@@ -104,7 +110,7 @@ high-impact websites and user experiences for businesses and building a promisin
               </div>
             </div>
 
-            <div class="content-box">
+            <div class="content-box" data-aos="fade-up">
               <h4>Course Content</h4>
               <div class="row">
                 <div class="col-md-6">
@@ -123,11 +129,13 @@ high-impact websites and user experiences for businesses and building a promisin
                 </div>
               </div>
             </div>
+
           </div>
 
-        
+          <!-- SIDEBAR -->
           <div class="col-lg-4">
-            <div class="sidebar-box">
+
+            <div class="sidebar-box" data-aos="fade-left">
               <p><strong>Minimum Eligibility:</strong> 10+2</p>
               <p><strong>Course Duration:</strong> 4 Months</p>
               <p><strong>Mode of Training:</strong> Online/Offline</p>
@@ -136,7 +144,7 @@ high-impact websites and user experiences for businesses and building a promisin
               <button class="btn btn-orange w-100">Start Learning</button>
             </div>
 
-            <div class="sidebar-box">
+            <div class="sidebar-box" data-aos="fade-left">
               <h5>Material Includes</h5>
               <ul>
                 <li>Video lectures</li>
@@ -146,7 +154,7 @@ high-impact websites and user experiences for businesses and building a promisin
               </ul>
             </div>
 
-            <div class="sidebar-box">
+            <div class="sidebar-box" data-aos="fade-left">
               <h5>Requirements</h5>
               <ul>
                 <li>No prior UX knowledge</li>
@@ -154,73 +162,78 @@ high-impact websites and user experiences for businesses and building a promisin
                 <li>Computer/laptop</li>
               </ul>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer class="footer" data-aos="fade-up">
+      <div class="footer-container">
 
+        <div class="footer-col footer-about">
+          <h2 class="logo"><img src="./images/LOGO (1).png"></h2>
+          <p>
+            Empowering learners worldwide through accessible, high-quality online education
+            designed to inspire growth, curiosity, and lifelong success in every field of study.
+          </p>
 
-    
-<footer class="footer">
-  <div class="footer-container">
+          <div class="social-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">FACEBOOK</a>
+            <a href="#">LINKEDIN</a>
+          </div>
+        </div>
 
-    
-    <div class="footer-col footer-about">
-      <h2 class="logo"><img src="./images/LOGO (1).png"></h2>
-      <p>
-        Empowering learners worldwide through accessible, high-quality online education
-        designed to inspire growth, curiosity, and lifelong success in every field of study.
-      </p>
+        <div class="footer-col">
+          <h3>LINKS</h3>
+          <nav class="footer-nav">
+            <a href="#">HOME</a>
+            <a href="#">SERVICES</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">TEACHERS</a>
+            <a href="#">CONTACT US</a>
+          </nav>
+        </div>
 
-      <div class="social-links">
-        <a href="#">INSTAGRAM</a>
-        <a href="#">FACEBOOK</a>
-        <a href="#">LINKEDIN</a>
+        <div class="footer-col">
+          <h3>PRODUCTS</h3>
+          <nav class="footer-nav">
+            <a href="#">OVERVIEWS</a>
+            <a href="#">FEATURES</a>
+            <a href="#">TUTORIALS</a>
+            <a href="#">SOLUTIONS</a>
+            <a href="#">PRICING</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <h3>CONTACTS</h3>
+          <nav class="footer-nav">
+            <a href="#">E-MAIL</a>
+          </nav>
+          <p class="subscribe">Get all the latest offers & info</p>
+        </div>
+
       </div>
-    </div>
-    <div class="footer-col">
-      <h3>LINKS</h3>
-      <nav class="footer-nav">
-        <a href="#">HOME</a>
-        <a href="#">SERVICES</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">TEACHERS</a>
-        <a href="#">CONTACT US</a>
-      </nav>
-    </div>
 
-    <div class="footer-col">
-      <h3>PRODUCTS</h3>
-      <nav class="footer-nav">
-        <a href="#">OVERVIEWS</a>
-        <a href="#">FEATURES</a>
-        <a href="#">TUTORIALS</a>
-        <a href="#">SOLUTIONS</a>
-        <a href="#">PRICING</a>
-      </nav>
-    </div>
+      <div class="footer-bottom">
+        <p>© 2021 <a href="#">Qode Interactive</a>, All Rights Reserved</p>
+      </div>
+    </footer>
 
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="footer-col">
-      <h3>CONTACTS</h3>
-      <nav class="footer-nav">
-        <a href="#">E-MAIL</a>
-      </nav>
-      <p class="subscribe"></p> Get all the latest offers & info</p>
-    </div>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
 
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2021 <a href="#">Qode Interactive</a>, All Rights Reserved</p>
-  </div>
-</footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

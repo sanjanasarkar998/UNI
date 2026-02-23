@@ -3,35 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* background */
 body{
   background:#868282;
+  scroll-behavior:smooth;
 }
 
+/* wrapper */
 .main-wrapper{
   padding:40px 0;
 }
 
+/* card */
 .form-card{
   border-radius:20px;
   padding:25px;
   background:#FFFDFC;
+  transition:0.3s;
 }
 
+/* hover lift */
+.form-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 35px rgba(0,0,0,0.12);
+}
+
+/* illustration */
 .illustration{
   max-height:260px;
+  transition:0.3s;
 }
+
+.illustration:hover{
+  transform:scale(1.05);
+}
+
+/* top text */
 .top-text{
   text-align:center;
   font-size:14px;
   margin-bottom:10px;
 }
 
+/* description */
 .desc{
   font-size:13px;
   color:#666;
   margin:10px 0 20px;
 }
 
+/* tabs */
 .tabs{
   text-align:center;
   margin-bottom:15px;
@@ -43,32 +65,70 @@ body{
   margin:0 5px;
   border-radius:20px;
   background:#eee;
+  transition:0.3s;
 }
 
+/* tab hover */
+.tabs button:hover{
+  background:#F84007;
+  color:#fff;
+}
+
+/* active tab */
 .tabs .active{
   background:#F84007;
   color:#fff;
 }
 
+/* inputs */
 .form-control{
   margin-bottom:15px;
   border-radius:8px;
-  border:1px solid;
+  border:1px solid #ccc;
   padding:10px;
+  transition:0.3s;
 }
 
+/* focus animation */
+.form-control:focus{
+  border-color:#F84007;
+  box-shadow:0 0 0 2px rgba(248,64,7,0.15);
+}
+
+/* button */
 .btn-outline-orange{
   border:1px solid #F84007;
   color:#F84007;
   padding:8px 22px;
   border-radius:8px;
   background:none;
+  transition:0.3s;
 }
 
 .btn-outline-orange:hover{
   background:#F84007;
   color:#fff;
+  transform:translateY(-2px);
 }
+
+/* animations */
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.form-card{
+  animation:fadeUp 0.8s ease;
+}
+
+/* responsive */
+
 @media (max-width: 992px){
 
   .form-card{
@@ -82,9 +142,7 @@ body{
   .desc{
     font-size:12px;
   }
-
 }
-
 
 @media (max-width: 768px){
 
@@ -118,9 +176,7 @@ body{
   .btn-outline-orange{
     width:100%;
   }
-
 }
-
 
 @media (max-width: 576px){
 
@@ -144,5 +200,4 @@ body{
   .illustration{
     max-height:160px;
   }
-
 }

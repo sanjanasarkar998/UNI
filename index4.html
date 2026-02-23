@@ -4,53 +4,74 @@
   <title>Instructors</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="./style4.css">
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-white py-3">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white fixed-top py-3 shadow-sm">
   <div class="container">
 
     <a class="navbar-brand fw-bold" href="#">
-      <img src="./images/LOGO (1).png">
+      <img src="./images/LOGO (1).png" class="logo-img">
     </a>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+    <!-- MOBILE MENU -->
+    <button class="navbar-toggler border-0" type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="nav">
+    <!-- DESKTOP MENU -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="./index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="./index2.html">ABOUT US</a></li>
         <li class="nav-item"><a class="nav-link" href="./index3.html">COURSES</a></li>
-        <li class="nav-item"><a class="nav-link" href="./index4.html">INSTRUCTORS</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./index4.html">INSTRUCTORS</a></li>
         <li class="nav-item"><a class="nav-link" href="./index5.html">CONTACT</a></li>
       </ul>
     </div>
 
-    <button class="btn contact-btn">Get in Touch</button>
+    <button class="btn contact-btn d-none d-lg-block">Get in Touch</button>
   </div>
 </nav>
 
+<!-- OFFCANVAS -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5>Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav text-center">
+      <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+      <li class="nav-item"><a class="nav-link" href="./index2.html">ABOUT US</a></li>
+      <li class="nav-item"><a class="nav-link" href="./index3.html">COURSES</a></li>
+      <li class="nav-item"><a class="nav-link active" href="./index4.html">INSTRUCTORS</a></li>
+      <li class="nav-item"><a class="nav-link" href="./index5.html">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- TITLE -->
 <section class="instructor-title text-center">
   <div class="container">
     <h2>Instructors</h2>
   </div>
 </section>
 
-
+<!-- HERO -->
 <section class="instructor-hero">
   <div class="container">
     <div class="row align-items-center">
 
       <div class="col-lg-6">
-        <img src="./images/Frame 134.png"
-        class="img-fluid hero-img">
+        <img src="./images/Frame 134.png" class="img-fluid hero-img">
       </div>
 
       <div class="col-lg-6">
@@ -67,7 +88,7 @@
   </div>
 </section>
 
-
+<!-- TEXT -->
 <section class="team-text text-center">
   <div class="container">
 
@@ -85,29 +106,30 @@
   </div>
 </section>
 
+<!-- TEAM -->
 <section class="team-members">
   <div class="container">
     <div class="row text-center">
 
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-6 member-card">
         <img src="./images/Frame 151 (4).png" class="img-fluid">
         <h6>James Robinson</h6>
         <span>Business Development</span>
       </div>
 
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-6 member-card">
         <img src="./images/Frame 151 (5).png" class="img-fluid">
         <h6>Emily Carter</h6>
         <span>Strategy Consultant</span>
       </div>
 
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-6 member-card">
         <img src="./images/Frame 151 (6).png" class="img-fluid">
         <h6>Maria Bennett</h6>
         <span>Digital Marketing</span>
       </div>
 
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-6 member-card">
         <img src="./images/Frame 151 (7).png" class="img-fluid">
         <h6>Sophia Lee</h6>
         <span>Software Specialist</span>
@@ -117,14 +139,11 @@
   </div>
 </section>
 
-
-
+<!-- CTA -->
 <section class="cta-banner">
   <div class="container">
-
     <div class="row align-items-center">
 
-    
       <div class="col-lg-8">
         <h2 class="cta-text">
           Empowering learners<br>
@@ -132,22 +151,18 @@
         </h2>
       </div>
 
-  
       <div class="col-lg-4 text-lg-end text-center">
         <button class="cta-btn">Join Us Now</button>
       </div>
 
     </div>
-
   </div>
 </section>
 
-
-
+<!-- FULL FOOTER (UNCHANGED) -->
 <footer class="footer">
   <div class="footer-container">
 
-    
     <div class="footer-col footer-about">
       <h2 class="logo"><img src="./images/LOGO (1).png"></h2>
       <p>
@@ -162,7 +177,6 @@
       </div>
     </div>
 
-    
     <div class="footer-col">
       <h3>LINKS</h3>
       <nav class="footer-nav">
@@ -174,7 +188,6 @@
       </nav>
     </div>
 
-    
     <div class="footer-col">
       <h3>PRODUCTS</h3>
       <nav class="footer-nav">
@@ -186,29 +199,21 @@
       </nav>
     </div>
 
-  
     <div class="footer-col">
       <h3>CONTACTS</h3>
       <nav class="footer-nav">
         <a href="#">E-MAIL</a>
       </nav>
-      <p class="subscribe"></p> Get all the latest offers & info</p>
+      <p class="subscribe">Get all the latest offers & info</p>
     </div>
 
   </div>
 
-  
   <div class="footer-bottom">
     <p>© 2021 <a href="#">Qode Interactive</a>, All Rights Reserved</p>
   </div>
 </footer>
 
-
-<script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
