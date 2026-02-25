@@ -1,29 +1,29 @@
-/* RESET */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* BODY FIX FOR FIXED NAVBAR */
+
 body{
     padding-top:95px;
     font-family:Poppins, sans-serif;
 }
 
-/* CONTAINER */
+
 .container{
     width:90%;
     max-width:1472px;
     margin:0 auto;
 }
 
-/* LOGO */
+
 .logo-img{
     height:42px;
 }
 
-/* NAVBAR */
+
 .nav-link{
     font-weight:500;
     margin:0 12px;
@@ -34,7 +34,7 @@ body{
     color:#FF5C2A !important;
 }
 
-/* BUTTON */
+
 .get-btn{
     background:#FF5C2A;
     color:#fff;
@@ -48,7 +48,7 @@ body{
     box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* ================= ABOUT HERO ================= */
+
 
 .about-hero{
     background:#FFFFFF;
@@ -88,7 +88,7 @@ body{
     border-radius:4px;
 }
 
-/* ================= UNIQUE SECTION ================= */
+
 
 .unique-section{
     background:#FFFFFF;
@@ -141,7 +141,7 @@ body{
     color:#666;
 }
 
-/* ================= DARK SECTION ================= */
+
 
 .dark-section{
     background:#000000;
@@ -196,7 +196,7 @@ body{
     transform:translateY(-3px);
 }
 
-/* STAT BOX */
+
 .stat-box{
     background:#e6e1d7;
     color:#000;
@@ -223,7 +223,7 @@ body{
     color:#555;
 }
 
-/* ================= ORANGE STRIP ================= */
+
 
 .orange-strip{
     background:#FF5C2A;
@@ -236,7 +236,7 @@ body{
     margin:0 20px;
 }
 
-/* ================= TEAM SECTION ================= */
+
 
 .team-section{
     background:#F0F0F0;
@@ -277,7 +277,7 @@ body{
     color:#777;
 }
 
-/* ================= NEWSLETTER ================= */
+
 
 .newsletter-section{
     background:#FFDB21;
@@ -317,7 +317,7 @@ body{
     margin-top:8px;
 }
 
-/* ================= FOOTER ================= */
+
 
 .footer{
     background:#050517;
@@ -426,9 +426,7 @@ body{
     .team-section{text-align:center;padding:70px 0;}
     .news-form{flex-direction:column;}
 }
-/* ===========================
-   LARGE SCREENS (1200px)
-=========================== */
+
 @media (max-width:1200px){
 
   .container{
@@ -450,9 +448,7 @@ body{
 }
 
 
-/* ===========================
-   LAPTOP / TABLET (992px)
-=========================== */
+
 @media (max-width:992px){
 
   body{
@@ -492,9 +488,7 @@ body{
 }
 
 
-/* ===========================
-   TABLET (768px)
-=========================== */
+
 @media (max-width:768px){
 
   body{
@@ -554,9 +548,6 @@ body{
 }
 
 
-/* ===========================
-   MOBILE (576px)
-=========================== */
 @media (max-width:576px){
 
   .container{
@@ -587,9 +578,7 @@ body{
 }
 
 
-/* ===========================
-   SMALL MOBILE (480px)
-=========================== */
+
 @media (max-width:480px){
 
   .about-title{

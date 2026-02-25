@@ -109,7 +109,7 @@
   margin-left:10px;
   color:#fff;
 }
-/* ===== NAVBAR FIX ===== */
+
 .logo-img{
   height:42px;
 }
@@ -118,7 +118,7 @@ body{
   padding-top:95px;
 }
 
-/* ===== BUTTON HOVER EFFECTS ===== */
+
 .btn-orange,
 .start-btn,
 .more-btn,
@@ -136,7 +136,7 @@ body{
   box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* ===== CARD HOVER ===== */
+
 .learn-card,
 .course-card{
   transition:0.3s;

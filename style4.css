@@ -1,30 +1,28 @@
 
-/* RESET */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* FIX NAVBAR OVERLAP */
 body{
   padding-top:95px;
   font-family:Poppins, sans-serif;
 }
 
-/* CONTAINER */
+
 .container{
   width:90%;
   max-width:1472px;
   margin:auto;
 }
 
-/* LOGO */
+
 .logo-img{
   height:42px;
 }
 
-/* NAVBAR */
 .nav-link{
   font-weight:500;
   margin:0 12px;
@@ -39,7 +37,7 @@ body{
   color:#FF5C2A !important;
 }
 
-/* CONTACT BUTTON */
+
 .contact-btn{
   background:#FF5C2A;
   color:#fff;
@@ -53,7 +51,7 @@ body{
   box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* ================= INSTRUCTOR SECTION ================= */
+
 
 .instructor-title{
   padding:40px 0;
@@ -83,7 +81,7 @@ body{
   color:#666;
 }
 
-/* HERO BUTTON */
+
 .orange-btn{
   background:#FF5C2A;
   color:#fff;
@@ -98,7 +96,6 @@ body{
   box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* TEAM TEXT */
 .team-text{
   background:white;
   padding:60px 0 20px;
@@ -117,7 +114,7 @@ body{
   margin-top:10px;
 }
 
-/* TEAM MEMBERS */
+
 .team-members{
   background:white;
   padding-bottom:60px;
@@ -128,7 +125,7 @@ body{
   margin-bottom:10px;
 }
 
-/* CARD HOVER */
+
 .member-card{
   transition:0.3s;
 }
@@ -147,7 +144,7 @@ body{
   color:#777;
 }
 
-/* RESPONSIVE HERO */
+
 
 @media(max-width:992px){
   .hero-heading{
@@ -169,7 +166,6 @@ body{
   }
 }
 
-/* CTA BANNER */
 
 .cta-banner{
   background:url("./images/background.png");
@@ -198,7 +194,7 @@ body{
   transform:translateY(-3px);
 }
 
-/* CTA RESPONSIVE */
+
 
 @media(max-width:992px){
   .cta-text{
@@ -218,7 +214,6 @@ body{
   }
 }
 
-/* ================= FOOTER ================= */
 
 .footer{
   background:#050517;

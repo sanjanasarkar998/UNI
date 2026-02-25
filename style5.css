@@ -4,19 +4,19 @@
     box-sizing: border-box;
 }
 
-/* smooth scroll */
+
 html{
   scroll-behavior:smooth;
 }
 
-/* container */
+
 .container{
   width:90%;
   max-width:1472px;
   margin:auto;
 }
 
-/* navbar */
+
 .logo-dot{
   color:#FF5C2A;
 }
@@ -35,7 +35,6 @@ html{
   color:#FF5C2A !important;
 }
 
-/* contact button */
 .contact-btn{
   background:#FF5C2A;
   color:#fff;
@@ -49,7 +48,7 @@ html{
   transform:translateY(-2px);
 }
 
-/* offcanvas menu */
+
 .offcanvas{
   width:260px;
 }
@@ -59,14 +58,14 @@ html{
   font-size:15px;
 }
 
-/* hero */
+
 .contact-hero img{
   width:100%;
   height:420px;
   object-fit:cover;
 }
 
-/* inquiry section */
+
 .inquiry-section{
   background:#FFF9F9;
   padding:70px 0;
@@ -196,7 +195,7 @@ html{
   text-decoration:none;
 }
 
-/* animations */
+
 @keyframes fadeUp{
   from{
     opacity:0;
@@ -208,7 +207,7 @@ html{
   }
 }
 
-/* media queries */
+
 
 @media (max-width:1200px){
 

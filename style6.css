@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* smooth scroll */
+
 html{
   scroll-behavior:smooth;
 }
@@ -13,7 +13,7 @@ html{
   max-width:1472px;
 }
 
-/* NAVBAR */
+
 
 .navbar{
   padding:18px 0;
@@ -36,7 +36,7 @@ html{
   margin-right:6px;
 }
 
-/* HERO */
+
 
 .hero{
   background:#D9D9D9;
@@ -54,7 +54,7 @@ html{
   margin:15px 0 25px;
 }
 
-/* BUTTONS */
+
 
 .btn-orange{
   background:#FF5C2A;
@@ -82,7 +82,6 @@ html{
   color:#fff;
 }
 
-/* COURSE AREA */
 
 .course-area{
   padding:60px 0;
@@ -99,7 +98,6 @@ html{
   transform:scale(1.02);
 }
 
-/* CONTENT BOX */
 
 .content-box{
   background:#fff;
@@ -114,7 +112,7 @@ html{
   box-shadow:0 12px 25px rgba(0,0,0,0.08);
 }
 
-/* SIDEBAR */
+
 
 .sidebar-box{
   background:#fff;
@@ -134,7 +132,6 @@ html{
   margin:15px 0;
 }
 
-/* ANIMATION */
 
 @keyframes fadeUp{
   from{
@@ -147,7 +144,6 @@ html{
   }
 }
 
-/* MEDIA QUERIES */
 
 @media (max-width: 992px){
 
@@ -222,7 +218,6 @@ html{
   }
 }
 
-/* FOOTER */
 
 .footer{
   background:#050517;
@@ -318,7 +313,7 @@ html{
   text-decoration:none;
 }
 
-/* responsive footer */
+
 
 @media (max-width:1200px){
 
