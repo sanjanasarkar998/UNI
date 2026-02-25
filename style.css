@@ -500,36 +500,13 @@ body{
 
 
 
-@media (max-width: 768px) {
-  .empower-img {
-    height: 400px;
-  }
 
-  .empower-card {
-    width: 85%;
-    margin-top: -100px;
-    padding: 25px 20px;
-  }
-
-  .empower-card h3 {
-    font-size: 22px;
-  }
-
-  .empower-card p {
-    font-size: 13px;
-  }
-
-  .empower-join {
-    font-size: 15px;
-  }
-}
 
 
 @media (max-width: 992px){
 
   .empower-section{
-    display:flex;
-    flex-direction:column;
+    display:block;
   }
 
   .empower-img{
@@ -537,27 +514,28 @@ body{
   }
 
   .empower-card{
+    position:relative;   
     top:auto;
     right:auto;
     transform:none;
     width:85%;
-    margin:-80px auto 30px;
+    margin:-80px auto 40px;
     padding:30px 25px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
   }
 }
 
 
-@media (max-width: 576px){
+@media (max-width: 768px){
 
   .empower-img{
-    height:300px;
+    height:auto;
   }
 
   .empower-card{
+    position:relative;   
     width:92%;
-    margin:-60px auto 25px;
-    padding:22px 18px;
+    margin:-60px auto 30px;
+    padding:24px 20px;
   }
 
   .empower-card h3{
@@ -565,9 +543,33 @@ body{
   }
 
   .empower-card p{
+    font-size:14px;
+  }
+
+  .empower-join{
+    font-size:15px;
+  }
+}
+
+
+@media (max-width: 576px){
+
+  .empower-card{
+    width:94%;
+    margin:-40px auto 25px;
+    padding:20px 16px;
+  }
+
+  .empower-card h3{
+    font-size:20px;
+  }
+
+  .empower-card p{
     font-size:13px;
   }
 }
+ 
+
 
 
 
