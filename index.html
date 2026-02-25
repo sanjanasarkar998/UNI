@@ -13,13 +13,44 @@
 <link rel="stylesheet" href="./style.css" />
 </head>
 
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const counter = document.querySelector("#counter");
+  const target = +counter.getAttribute("data-target");
+
+  let current = 0;
+  const duration = 2000; 
+  const startTime = performance.now();
+
+  function animateCounter(timestamp) {
+    const progress = timestamp - startTime;
+    const increment = Math.min(progress / duration, 1);
+
+    current = Math.floor(increment * target);
+    counter.innerText = current.toLocaleString();
+
+    if (increment < 1) {
+      requestAnimationFrame(animateCounter);
+    } else {
+      counter.innerText = target.toLocaleString();
+    }
+  }
+
+  requestAnimationFrame(animateCounter);
+
+});
+</script>
+
 <body>
 
 
 <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
   <div class="container">
 
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <img src="./images/LOGO (1).png" class="logo-img">
     </a>
 
@@ -63,13 +94,19 @@
 </div>
 
 
+
 <section class="hero">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6" data-aos="fade-right">
         <h1>Empowering <br>the world <br>together</h1>
         <p>At Uni, we believe in making quality education accessible to everyone.</p>
-        <div class="count">4K+</div>
+
+        
+        <div class="count">
+          <span id="counter" data-target="4000">0</span>+
+        </div>
+
         <div class="students">
           <img src="./images/student 1.png" />
           <img src="./images/student 2.png" />
@@ -438,7 +475,12 @@
 
     
     <div class="footer-col footer-about">
-      <h2 class="logo"><img src="./images/LOGO (1).png"></h2>
+      <div class="logo" >
+        <a class="navbar-brand" href="index.html">
+             <img src="./images/LOGO (1).png" alt="logo">
+        </a>
+      </div>
+
       <p>
         Empowering learners worldwide through accessible, high-quality online education
         designed to inspire growth, curiosity, and lifelong success in every field of study.
@@ -451,9 +493,9 @@
       </div>
     </div>
 
-    
+   
     <div class="footer-col">
-      <h3>LINKS</h3>
+      <div class="footer-title">LINKS</div>
       <nav class="footer-nav">
         <a href="#">HOME</a>
         <a href="#">SERVICES</a>
@@ -463,9 +505,9 @@
       </nav>
     </div>
 
-
+   
     <div class="footer-col">
-      <h3>PRODUCTS</h3>
+      <div class="footer-title">PRODUCTS</div>
       <nav class="footer-nav">
         <a href="#">OVERVIEWS</a>
         <a href="#">FEATURES</a>
@@ -477,16 +519,18 @@
 
     
     <div class="footer-col">
-      <h3>CONTACTS</h3>
+      <div class="footer-title">CONTACTS</div>
       <nav class="footer-nav">
         <a href="#">E-MAIL</a>
       </nav>
-      <p class="subscribe"></p> Get all the latest offers & info</p>
+
+      <p class="subscribe">
+        Get all the latest offers & info
+      </p>
     </div>
 
   </div>
 
-  
   <div class="footer-bottom">
     <p>© 2021 <a href="#">Qode Interactive</a>, All Rights Reserved</p>
   </div>

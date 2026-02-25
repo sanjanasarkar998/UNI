@@ -81,13 +81,25 @@
 }
 
 
+
 .count{
   font-size:75px;
   font-weight:700;
   color:#ffe500;
   margin-top:35px;
+  letter-spacing:1px;
+  display:flex;
+  align-items:center;
 }
 
+.count span{
+  display:inline-block;
+  min-width:120px;
+}
+
+.count span{
+  transition:all 0.3s ease;
+}
 
 .students{
   display:flex;
@@ -487,44 +499,75 @@ body{
 }
 
 
-@media(max-width:992px){
 
-  .empower-img{
-    height:450px;
+@media (max-width: 768px) {
+  .empower-img {
+    height: 400px;
   }
 
-  .empower-card{
-    right:5%;
-    width:300px;
+  .empower-card {
+    width: 85%;
+    margin-top: -100px;
+    padding: 25px 20px;
+  }
+
+  .empower-card h3 {
+    font-size: 22px;
+  }
+
+  .empower-card p {
+    font-size: 13px;
+  }
+
+  .empower-join {
+    font-size: 15px;
   }
 }
 
-@media(max-width:768px){
+
+@media (max-width: 992px){
+
+  .empower-section{
+    display:flex;
+    flex-direction:column;
+  }
 
   .empower-img{
     height:420px;
   }
 
   .empower-card{
-    position:static;
+    top:auto;
+    right:auto;
     transform:none;
-    width:90%;
-    margin: -80px auto 0;
-    text-align:center;
+    width:85%;
+    margin:-80px auto 30px;
+    padding:30px 25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
   }
 }
 
-@media(max-width:480px){
+
+@media (max-width: 576px){
+
+  .empower-img{
+    height:300px;
+  }
 
   .empower-card{
-    padding:30px 20px;
+    width:92%;
+    margin:-60px auto 25px;
+    padding:22px 18px;
   }
 
   .empower-card h3{
     font-size:22px;
   }
-}
 
+  .empower-card p{
+    font-size:13px;
+  }
+}
 
 
 
@@ -822,14 +865,13 @@ body{
 }
 
 
-.logo-box img{
-  width:100%;          
-  max-width:120px;     
-  max-height:40px;
-  object-fit:contain;
-  
-}
 
+.logo-box img{
+  width:100%;
+  max-width:220px;
+  max-height:90px;
+  object-fit:contain;
+}
 .logo-box img:hover{
   opacity:0.8;
 }
@@ -978,6 +1020,11 @@ body{
 
 
 
+
+
+
+
+
 .footer{
   background:#050517;
   color:#fff;
@@ -999,24 +1046,45 @@ body{
   min-width:180px;
 }
 
+
 .logo{
   color:#ffd400;
   margin-bottom:15px;
 }
 
+
 .footer-about p{
   font-size:13px;
   color:#FFFFFF;
   width:80%;
+  line-height:1.6;
 }
 
 
-.footer-col h3{
+.footer-title{
   margin-bottom:20px;
   font-size:18px;
   letter-spacing:1px;
+  font-weight:600;
+  color:#fff;
+  position:relative;
 }
 
+
+.footer-title::after{
+  content:"";
+  width:0;
+  height:2px;
+  background:#ffd400;
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  transition:0.3s ease;
+}
+
+.footer-title:hover::after{
+  width:40px;
+}
 
 .footer-nav{
   display:flex;
@@ -1028,11 +1096,28 @@ body{
   text-decoration:none;
   color:#cfcfcf;
   font-size:13px;
-  transition:0.3s;
+  transition:all 0.3s ease;
+  position:relative;
 }
 
 .footer-nav a:hover{
   color:#fff;
+  padding-left:6px;
+}
+
+.footer-nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:0;
+  height:1px;
+  background:#ffd400;
+  transition:0.3s;
+}
+
+.footer-nav a:hover::after{
+  width:100%;
 }
 
 .social-links{
@@ -1044,19 +1129,20 @@ body{
   font-size:12px;
   color:#cfcfcf;
   text-decoration:none;
+  transition:all 0.3s ease;
+  display:inline-block;
 }
 
 .social-links a:hover{
-  color:#fff;
+  color:#ffd400;
+  transform:translateY(-3px);
 }
-
 
 .subscribe{
   font-size:12px;
   color:#cfcfcf;
   margin-top:10px;
 }
-
 
 .footer-bottom{
   border-top:1px solid #2a2a40;
@@ -1073,8 +1159,13 @@ body{
 .footer-bottom a{
   color:#fff;
   text-decoration:none;
+  transition:0.3s;
 }
 
+.footer-bottom a:hover{
+  color:#ffd400;
+  text-decoration:underline;
+}
 
 @media (max-width:1200px){
 
