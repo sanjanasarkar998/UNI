@@ -101,6 +101,19 @@
   transition:all 0.3s ease;
 }
 
+
+@media only screen and (max-width: 600px) {
+  .count {
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+  }
+
+  .count span {
+    min-width: auto;   
+  }
+}
+
 .students{
   display:flex;
   align-items:center;
